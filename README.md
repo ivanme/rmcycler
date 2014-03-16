@@ -19,7 +19,8 @@ When run from the command line, RMCycler takes one argument, which is the path t
 * **RMPath** - Path to the Rainmeter executable. `C:\Program Files\Rainmeter\Rainmeter.exe` will be used if not specified.
 * **LFPath** - Path to your "Layouts" folder. Use this if you are running a portable installation of Rainmeter, and/or your layouts are not located in your AppData folder. 
 * **List** - A comma-separated list of the layouts you want to cycle through. If not specified, it will use all your saved layouts (except for @Backup). The order in which they appear here is also relevant for the `InOrder` selection mode.
-#####Note:
+
+ Note:
  * You can have repeated layouts in the list.
  * For `Shuffle` and `InOrder` selection modes, **List** will be completely ignored if there are **Remaining** layouts. (See below.) 
 * **Mode** - How RMCycler will cycle through the layouts. Options are:
@@ -27,7 +28,8 @@ When run from the command line, RMCycler takes one argument, which is the path t
  * `Shuffle` - Will cycle through each of the layouts once in a random order, before randomly cycling through all of them again.
  * `InOrder` - Will cycle through the layouts in the same order as they appear in **List**. If **List** has no value (meaning you are cycling through all layouts), `InOrder` should cycle through them alphabetically.
 * **Remaining** - A comma-separated list of the layouts remaining in the current rotation cycle, used for the `Shuffle` and `InOrder` selection modes. Generally, you won't have to worry about this section since RMCycler will manage it on its own. However, you can delete it or manually modify it as you require.
-#####Note:
+ 
+ Note:
 As long as **Remaining** is non-empty, it will be used to choose the next layout, and **List** will be ignored. It will be repopulated using the value of **List** only when it becomes empty.
 
 
